@@ -1,0 +1,14 @@
+1. Make 100 chromosomes(say) of size = feature length
+ 
+2. Randomly fill chromosomes with 0/1
+
+3. For positions corresponding to 1, take the features with the 
+class from given data and calculate gamma(attribute dependency).
+
+4. Among all the 100 chromosomes, choose those with gamma value above a threshold(Fitness measure).
+
+5. Perform a crossover and mutation of your choice (Google this one) to get back 100 chromosomes again
+
+6. Repeat for 100 iterations/average gamma value converge
+
+7. Form the last 100 chromosomes choose the one with the best gamma value. The attributes corresponding to the 1's in the chromosome gives the probable best features of the given dataset.                                                                             
